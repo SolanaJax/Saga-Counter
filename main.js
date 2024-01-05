@@ -1,36 +1,7 @@
 
-const secureRPC = "https://jittery-charmian-fast-mainnet.helius-rpc.com/" //limited to 5 TPS per IP
-
-function saveTheme(theme) {
-  localStorage.setItem("theme", theme)
-}
-
-function loadTheme() {
-  return localStorage.getItem("theme")
-}
-
-function themeToggle() {
-  const currentTheme = loadTheme()
-  const switchTheme = document.querySelector(".switch-theme")
-
-  if (currentTheme === "dark-mode") {
-    document.body.classList.remove("dark-mode")
-    switchTheme.textContent = "🌑"
-    saveTheme("light-mode")
-  } else {
-    document.body.classList.add("dark-mode")
-    switchTheme.textContent = "☀️"
-    saveTheme("dark-mode")
-  }
-}
+const secureRPC = "https://jamima-ehu4jt-fast-mainnet.helius-rpc.com/" //limited to 5 TPS per IP
 
 window.onload = async function () {
-
-    const currentTheme = loadTheme();
-    if (!currentTheme || currentTheme === "dark-mode") {
-      document.body.classList.add("dark-mode");
-      document.querySelector(".switch-theme").textContent = "☀️";
-    }
 
     let countUI = document.getElementById("count")
     let oldCount = 0
