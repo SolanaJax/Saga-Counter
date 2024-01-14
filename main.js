@@ -1,5 +1,5 @@
 
-const secureRPC = "https://mainnet.helius-rpc.com/?api-key=c31bcee9-bae5-4ce0-84ef-c8cf03452996" //limited to 5 TPS per IP
+const secureRPC = "https://mainnet.helius-rpc.com/?api-key=adbedb31-3eff-4157-aef3-3e87bcee2ca4" //limited to 5 TPS per IP
 
 window.onload = async function () {
 
