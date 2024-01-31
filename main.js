@@ -1,5 +1,5 @@
 
-const secureRPC = "https://mainnet.helius-rpc.com/?api-key=adbedb31-3eff-4157-aef3-3e87bcee2ca4" //limited to 5 TPS per IP
+const secureRPC = "https://mainnet.helius-rpc.com/?api-key=3d76ed43-ead2-43bc-8218-6d07403af290" //limited to 5 TPS per IP
 
 window.onload = async function () {
 
@@ -37,7 +37,7 @@ window.onload = async function () {
 
     await updateCount()
 
-    setInterval(updateCount, 30000)
+    setInterval(updateCount, 100000)
 }
 
 
